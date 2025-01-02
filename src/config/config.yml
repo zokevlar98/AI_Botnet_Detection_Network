@@ -1,0 +1,23 @@
+data:
+  features:
+    - duration
+    - protocol_type
+    - service
+    - flag
+    - src_bytes
+    - dst_bytes
+    # Add more features as needed
+  target: label
+
+model:
+  type: rf  # Options: rf, gbm, svm, dnn, lstm
+  rf_params:
+    n_estimators: 100
+    max_depth: 10
+  # Add more model parameters as needed
+
+training:
+  test_size: 0.2
+  random_state: 42
+  cross_validation:
+    n_splits: 5
