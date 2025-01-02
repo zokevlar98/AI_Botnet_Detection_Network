@@ -1,12 +1,12 @@
 import logging
 import argparse
 from pathlib import Path
-from utils.config import load_config, DEFAULT_CONFIG
-from data.data_loader import CTUDataLoader
-from features.feature_engineering import NetworkFeatureEngineer
-from models.model import BotnetDetectionModel
-from models.model_trainer import ModelTrainer
-from models.model_evaluator import ModelEvaluator
+from src.utils.config import load_config, DEFAULT_CONFIG
+from src.data.data_loader import CTUDataLoader
+from src.features.feature_engineering import NetworkFeatureEngineer
+from src.models.model import BotnetDetectionModel
+from src.models.model_trainer import ModelTrainer
+from src.models.model_evaluator import ModelEvaluator
 
 logging.basicConfig(
     level=logging.INFO,

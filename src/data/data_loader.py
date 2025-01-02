@@ -3,7 +3,7 @@ import numpy as np
 from typing import Tuple, Optional
 from sklearn.model_selection import train_test_split
 import logging
-from ..utils.utils import validate_dataset
+from src.utils.utils import validate_dataset
 
 logger = logging.getLogger(__name__)
 

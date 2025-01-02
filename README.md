@@ -19,7 +19,6 @@ Develop and evaluate machine learning models capable of identifying botnet activ
 
 bash
 git clone https://github.com/zokevlar98/AI_Botnet_Detection_Network.git
-cd botnet-detection
 pip install -r requirements.txt
 
 
